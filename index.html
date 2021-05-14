@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardini</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- my css -->
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <div class="navbar-container">
+        <nav class="navbar">
+            <span class="logo">Mardini</span>
+            <ul class="navigation">
+                <li onclick="scroolToSection('.home')">Home</li>
+                <li onclick="scroolToSection('.about')">About</li>
+                <li onclick="scroolToSection('.project')">Project</li>
+                <li onclick="scroolToSection('.certificate')">Certificate</li>
+            </ul>
+            <div onclick="navbarToggle()" class="bar"><i class="fas fa-bars"></i></div>
+        </nav>
+    </div>
+    <!-- navbar -->
+
+    <!-- section home -->
+    <section class="home">
+        <div>
+            <div class="intro">Hai I'm Mardini</div>
+            <div class="img"><img src="./asset/img/profile.png" alt="" srcset=""></div>
+            <div class="span">Front-end web developer</div>
+            <div class="contact">
+                <ul>
+                    <li><a href="https://github.com/mardini-kompronk/" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a href="https://ig.me/mardini1414/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/+6281385501120" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <div class="email-cv">
+                    <a href="mailto:mardini1414@gmail.com"><button class="btn-email"><i class="fas fa-envelope"></i>
+                            Email me</button></a> <a class="cv" href="">Download
+                        cv</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section home -->
+
+    <!-- section about -->
+    <section class="about">
+        <div class="about-text">
+            <header>About me</header>
+            <p>My name is Mardini born in Pandeglang Banten in 1997, I graduated from high school. I love coding and
+                learning. Let's take a look at some of the projects I've
+                <span onclick="scroolToSection('.project')">worked on.</span>
+            </p>
+        </div>
+        <div class="myskill">
+            <header>Skill</header>
+            <div class="html">
+                <span><i class="fab fa-html5"></i> HTML</span>
+                <div class="prog">
+                    <div class="html-prog"></div>
+                </div>
+            </div>
+            <div class="css">
+                <span><i class="fab fa-css3-alt"></i> CSS</span>
+                <div class="prog">
+                    <div class="css-prog"></div>
+                </div>
+            </div>
+            <div class="javascript">
+                <span><i class="fab fa-js-square"></i> Javascript</span>
+                <div class="prog">
+                    <div class="js-prog"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section about -->
+
+    <!-- section project -->
+    <section class="project">
+        <header>This is my project</header>
+        <div class="project-container"></div>
+    </section>
+    <!-- end section project -->
+
+    <!-- section certificate -->
+    <section class="certificate">
+        <header>My Certificate</header>
+        <div class="certificate-container">
+            <div onclick="arrowLeft()" class="arrow-left"><i class="fas fa-angle-left"></i></div>
+            <div class="card-certificate"><a class="urlImg" href="" target="_blank"><img name="img"></a></div>
+            <div onclick="arrowRight()" class="arrow-right"><i class="fas fa-angle-right"></i></div>
+        </div>
+    </section>
+    <!-- end section certificate -->
+
+    <!-- footer -->
+    <footer class="footer">
+        &copy; Mardini 2021 <span>&#10084</span>
+    </footer>
+    <!-- end footer -->
+
+    <!-- my javascript -->
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
